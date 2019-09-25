@@ -1,0 +1,143 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background-color: #d6d6d6;
+}
+header{
+  margin: 0;
+  width: 100%;
+  min-height: 200px;
+  height: 40vh;
+  background-image: url('../images/headerBackground.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1{
+  margin: 5rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 5rem;
+}
+
+body > div{
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  grid-gap: 1rem;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .1rem;
+  overflow: scroll;
+  margin-top: 1rem;
+}
+
+section{
+  background-color: white;
+  padding: .5rem;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+button{
+  background-color: unset;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+h2{
+  padding: 0;
+  margin-top: 0;
+}
+
+h2 a{
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #808080;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.info p{
+  margin-top: .5rem;
+  margin-bottom: .1rem;
+}
+
+.info a{
+  text-decoration: none;
+  color: black;
+}
+
+.vote{
+  height: 70px;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vote *{
+  margin:0;
+}
+
+.vote img{
+  width: 30%;
+  cursor: pointer;
+}
+
+span{
+  color: #026fb3;
+}
+
+aside{
+  margin-top: 1rem;
+}
+
+aside a{
+  display: block;
+  padding: .4rem;
+  margin-bottom: .5rem;
+  background-color: #039dfc;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+aside div{
+  background-color: #e5e5e5;
+  padding-bottom: .5rem;
+}
+
+aside h2{
+  background-color: #f1f1f1;
+  padding: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+aside p{
+  text-align: center;
+}
+
+ul{
+  list-style: square;
+}

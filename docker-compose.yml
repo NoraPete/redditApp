@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: reddit
+    networks:
+      - backend
+
+  db:
+    image: mysql:5.7
+    ports:
+      - "3309:3309"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - container-volume:/var/lib/mysql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    networks: 
+      - backend
+
+networks:
+  backend:
+
+volumes:
+  container-volume:      
