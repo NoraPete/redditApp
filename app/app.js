@@ -1,6 +1,5 @@
 const express = require('express');
 const mysql = require('mysql');
-const fetch = require('node-fetch');
 const path = require('path');
 require('dotenv').config();
 
@@ -21,8 +20,9 @@ connection.connect(function (err) {
   if (err) {
     console.log(err);
     return;
+  } else {
+    console.log('Connection with database is established');
   }
-  console.log('Connection with database is established');
 });
 
 app.get('/reddit', function(req, res) {

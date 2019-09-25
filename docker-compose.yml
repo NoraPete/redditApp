@@ -17,9 +17,9 @@ services:
       - backend
 
   db:
-    image: mysql:latest
+    image: mysql:5.7
     ports:
-      - "3309:3309"
+      - "3306:3306"
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
