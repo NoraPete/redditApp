@@ -17,7 +17,7 @@ services:
       - backend
 
   db:
-    image: mysql:5.7
+    image: mysql:latest
     ports:
       - "3309:3309"
     restart: always
