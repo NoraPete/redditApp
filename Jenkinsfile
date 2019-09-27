@@ -11,5 +11,10 @@ pipeline {
 					sh 'docker build -t np4519/reddit .'
 				}
 			}
+			stage('Test') {
+				steps {
+					sh 'node test.js'
+				}
+			}
 		}
 	}
