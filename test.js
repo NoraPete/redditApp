@@ -1,6 +1,9 @@
-const test = require('tape');
+'use strict';
 
-test('Test if tape works', (t) => {
-    t.equals(5, 5);
-    t.end();
-});
+function test() {
+  if(1 === 1) {
+    console.log('Passed the test');
+  }
+}
+
+test();
