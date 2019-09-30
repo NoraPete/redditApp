@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    build: .
+    image: np4519/reddit_app:1
     ports:
       - "3000:3000"
     restart: always
