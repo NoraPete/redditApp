@@ -6,7 +6,13 @@ pipeline {
 					checkout scm
 				}
 			}
-			stage('Build') {
+			stage('Build-app') {
+				steps {
+					sh 'npm install'
+					sh 'npm start'
+				}
+			}
+			stage('Build-image') {
 				steps {
 					sh 'docker build -t np4519/reddit .'
 				}
