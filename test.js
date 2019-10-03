@@ -1,7 +1,7 @@
 'use strict';
 
 function test() {
-  if(2 === 2) {
+  if(3 === 3) {
     console.log('Passed the test');
   }
 }
